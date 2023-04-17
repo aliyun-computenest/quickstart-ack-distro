@@ -1,15 +1,12 @@
-# Demo服务实例部署文档
+# Kubernetes集群部署（Ack-Distro）服务实例部署文档
 
 ## 概述
 
-```
 Kubernetes集群部署（Ack-Distro）是计算巢官方提供的基于Ack-Distro部署K8S集群的服务。关于Ack-Distro，请参见[Ack-Distro](https://github.com/AliyunContainerService/ackdistro/)
 本文向您介绍根据该服务部署实例的流程和使用说明。
-```
 
 ## 计费说明
 
-```
 Kubernetes集群部署（Ack-Distro）在计算巢上的费用主要涉及：
 
 - 所选vCPU与内存规格
@@ -26,7 +23,6 @@ Kubernetes集群部署（Ack-Distro）在计算巢上的费用主要涉及：
 - 包年包月
 
 预估费用在创建实例时可实时看到。
-```
 
 ## 部署架构
 1. 多节点部署  
