@@ -120,3 +120,26 @@ Kubernetes集群部署（Ack-Distro）服务需要对ECS、VPC等资源进行访
    c. 在结果中可以将配置文件复制到本机
    <img src="10.png" width="1500" height="500" align="bottom"/>  
    d. 后续步骤同 3.d
+
+## 集群扩缩容
+创建好服务实例后，可以执行一些运维操作，其中便包括集群扩缩容，下面介绍如何进行扩缩容。
+
+### 扩容
+1. 点击运维管理页的"弹性扩缩容"
+   <img src="12.png" width="1500" height="340" align="bottom"/>
+2. 选择伸缩组。扩缩容Worker节点数量可以选择k8s-worker-asg开头的伸缩组，扩缩容Master节点则选择k8s-master-asg开头的，以Worker节点为例
+   <img src="13.png" width="1500" height="700" align="bottom"/>
+   1. 选择扩容或者调整至指定数量
+   2. 输入伸缩组ECS实例调整数量
+   3. 点击下一步，然后点击创建
+   4. 等待执行完成后即可进行验证
+   <img src="14.png" width="1500" height="300" align="bottom"/>
+
+### 缩容
+1. 点击运维管理页的"弹性扩缩容"
+2. 选择伸缩组。扩缩容Worker节点数量可以选择k8s-worker-asg开头的伸缩组，扩缩容Master节点则选择k8s-master-asg开头的，以Worker节点为例
+   1. 选择缩容或者调整至指定数量
+   2. 输入伸缩组ECS实例调整数量
+   3. 点击下一步，然后点击创建
+   4. 等待执行完成后即可进行验证
+
